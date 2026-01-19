@@ -5,13 +5,13 @@
 class Staghorn < Formula
   desc "A shared team layer for Claude Code - syncs team CLAUDE.md guidelines from GitHub"
   homepage "https://github.com/HartBrook/staghorn"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/HartBrook/staghorn/releases/download/v0.5.0/staghorn_0.5.0_darwin_amd64.tar.gz"
-      sha256 "a2fc12bda2ee3c63d709da42a01995878d59abbbaac052051d5510e08648bd99"
+      url "https://github.com/HartBrook/staghorn/releases/download/v0.6.0/staghorn_0.6.0_darwin_amd64.tar.gz"
+      sha256 "c8e67e7b5396198e456628109ad7080d14ec2cc8febcc24ff7c4e5504bf5ff83"
 
       def install
         bin.install "staghorn"
@@ -19,8 +19,8 @@ class Staghorn < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/HartBrook/staghorn/releases/download/v0.5.0/staghorn_0.5.0_darwin_arm64.tar.gz"
-      sha256 "ba1de45f9bb61247640570c87d01cc33a1f3a8cac5eaeebcb9479b258ee8b137"
+      url "https://github.com/HartBrook/staghorn/releases/download/v0.6.0/staghorn_0.6.0_darwin_arm64.tar.gz"
+      sha256 "de5cf82c294b2e7e37a0c79e97050410073cfc5c46fa7eda9ddc4740f0b3a62b"
 
       def install
         bin.install "staghorn"
@@ -31,16 +31,16 @@ class Staghorn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HartBrook/staghorn/releases/download/v0.5.0/staghorn_0.5.0_linux_amd64.tar.gz"
-      sha256 "b4abc1d3378abf4837fd507e9e0f47ad31620487077d0bdca0bd52c8fdb37d9e"
+      url "https://github.com/HartBrook/staghorn/releases/download/v0.6.0/staghorn_0.6.0_linux_amd64.tar.gz"
+      sha256 "126bb9e4e9fa7a8b787525348ebf545b93f8d1255f8eeb8f6b8d8b477c8f3724"
       def install
         bin.install "staghorn"
         bin.install_symlink "staghorn" => "stag"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HartBrook/staghorn/releases/download/v0.5.0/staghorn_0.5.0_linux_arm64.tar.gz"
-      sha256 "2bdcd6a293f17448d82253a28429b4386d6d2636823628f9e309c3ec1334e6e3"
+      url "https://github.com/HartBrook/staghorn/releases/download/v0.6.0/staghorn_0.6.0_linux_arm64.tar.gz"
+      sha256 "28f9b560ed94fa1018a1612ef1acf029c58ae60dbffc5a484cddb281a73bd13d"
       def install
         bin.install "staghorn"
         bin.install_symlink "staghorn" => "stag"
